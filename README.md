@@ -1,2 +1,2 @@
-# Prueba tecnica
+# Prueba técnica
 
