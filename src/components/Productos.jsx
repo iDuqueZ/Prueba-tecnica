@@ -3,6 +3,11 @@ import '../styles/Productos.css'
 
 export default function Productos() {
 
+    const detalles = async(e) =>{
+        e.preventDefault();
+        
+    }
+
     var data = [
         {
             imagen: 'https://locatelcolombia.vtexassets.com/arquivos/ids/218701/822383230047_1_SILLA-DE-RUEDA-DRIVE-PEDIATRICA-14.png?v=637050258599430000',
@@ -33,7 +38,7 @@ export default function Productos() {
   return (
     <div className='cajonProductos'>
          {Array.from(data).map((datos)=>(
-            <div className='card-producto'>
+            <div className='card-producto' onClick={{detalles}}>
                 <div className='inner'>
                     <div className='imagen'>
                         <img src={datos.imagen} alt="producto" />

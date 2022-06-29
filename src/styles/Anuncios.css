@@ -10,13 +10,13 @@
 }
 
 .card1-anuncio{
-    background-image: url('https://cdn.pixabay.com/photo/2016/11/29/20/22/girl-1871104_960_720.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://cdn.pixabay.com/photo/2016/11/29/20/22/girl-1871104_960_720.jpg');
     height: 450px;
     position: relative;
 }
 
 .card2-anuncio{
-    background-image: url('https://cdn.pixabay.com/photo/2018/09/10/12/49/hand-3666974_960_720.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://cdn.pixabay.com/photo/2018/09/10/12/49/hand-3666974_960_720.jpg');
     height: 450px;
     position: relative;
 }
