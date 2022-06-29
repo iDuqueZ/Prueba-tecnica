@@ -1,0 +1,47 @@
+.anuncios{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.card1-anuncio{
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/29/20/22/girl-1871104_960_720.jpg');
+    height: 450px;
+    position: relative;
+}
+
+.card2-anuncio{
+    background-image: url('https://cdn.pixabay.com/photo/2018/09/10/12/49/hand-3666974_960_720.jpg');
+    height: 450px;
+    position: relative;
+}
+
+.anuncios h2 {
+    color: white;
+    font-size: 5vh;
+    width: 220px;
+    padding-top: 200px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.anuncios .btn-verProducto-anuncio{
+    width: 250px;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    border-radius: 5px;
+    font-size: 3vh;
+    margin: auto;
+}
+
+.anuncios .btn-verProducto-anuncio:hover {
+    cursor: pointer;
+}

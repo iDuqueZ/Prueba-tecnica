@@ -1,0 +1,69 @@
+.SliderMaster {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.slider{
+    display: flex;
+    cursor: grab;
+}
+
+.card {
+    flex: 1;
+    width: 40%;
+    margin: 10px;
+    text-align: center;
+}
+
+.card .texto h5{
+    letter-spacing: 1px;
+    font-weight: 530;
+    color: rgb(80, 80, 80);
+    margin-top: 20px;
+    font-size: 2vh;
+}
+
+.card img {
+    object-fit: cover;
+    width: 300px;
+    height: 220px;
+    border-radius: 10px;
+    transition: all 500ms ease-out;
+}
+
+.card .imagen{
+    position: relative;
+    overflow-y: hidden;
+    height: 220px;
+}
+
+.capa{
+    background-image: url(../resources/silla.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 10px;
+}
+
+.capa::before{
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.card .imagen:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}

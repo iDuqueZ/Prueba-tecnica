@@ -1,0 +1,66 @@
+.cajonProductos{
+    display: flex;
+    flex-direction: row;
+    width: 94%;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.card-producto {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    transition: all 500ms ease-out;
+}
+
+.card-producto .imagen {
+    background-color: white;
+    height: 320px;
+}
+
+.card-producto .imagen img{
+    padding: 30px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.descripcion {
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 2vh;
+    color: rgb(53, 53, 53);
+}
+
+.precios {
+    opacity: 0;
+    display: none;
+}
+
+.btn-añadirCarrito{
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-primario);
+    border-radius: 2px;
+    color: white;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms ease-out;
+    margin-top: 10px;
+}
+
+.card-producto:hover {
+    transform: scale(1.05);
+}
+
+.card-producto:hover > .btn-añadirCarrito{
+    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-producto:hover > .inner {
+    background-color: white;
+    border: 0.05px solid gray;
+}

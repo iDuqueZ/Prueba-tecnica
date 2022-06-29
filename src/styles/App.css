@@ -1,0 +1,20 @@
+:root {
+    --color-primario : #0070E0;
+    --color-primario-oscuro : #0d5caa;
+    --color-navBar: #F4F4F4;
+    --color-secundario: #DBE902;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #F4F4F4;
+}
+
+

@@ -1,0 +1,75 @@
+.Cajon-Grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    width: 86%;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    height: 600px;
+}
+    
+.div1 { grid-area: 1 / 1 / 2 / 3; }
+.div2 { grid-area: 1 / 3 / 2 / 4; }
+.div3 { grid-area: 1 / 4 / 3 / 5; }
+.div4 { grid-area: 2 / 1 / 3 / 2; }
+.div5 { grid-area: 2 / 2 / 3 / 4; }
+
+.Cajon-Grid .cuerpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 4vh;
+}
+
+.div1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://cdn.pixabay.com/photo/2015/07/10/20/54/stethoscope-840125_960_720.jpg');
+    background-size: cover;
+    border-radius: 10px;
+    transition: all 500ms ease-out;
+}
+
+.div2 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.6)), url('https://cdn.pixabay.com/photo/2013/11/26/17/23/pharmacy-218692_960_720.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.div3 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://cdn.pixabay.com/photo/2014/12/10/21/01/doctor-563428_960_720.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.div4 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://cdn.pixabay.com/photo/2018/01/04/21/15/young-3061652_960_720.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.div5 {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://cdn.pixabay.com/photo/2016/11/29/01/25/adult-1866533_960_720.jpg');
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.btn-nosotros {
+    background-color: var(--color-secundario);
+    border-radius: 5px;
+    padding: 20px;
+    width: 60%;
+    font-size: 2.5vh;
+    font-weight: 600;
+    color:  var(--color-primario);
+    margin: 0 auto 0 auto;
+    margin-top: 10px;
+    opacity: 0;
+    display: none;
+}
+
+.Cajon-Grid .cuerpo:hover > .btn-nosotros {opacity: 1; display: block;}
